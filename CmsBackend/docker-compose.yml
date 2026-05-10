@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cmsproduct-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cmsadmin
+      POSTGRES_PASSWORD: cmsadmin123
+      POSTGRES_DB: cmsproduct
+    ports:
+      - "5432:5432"
+    volumes:
+      - cmsproduct_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  cmsproduct_postgres_data:

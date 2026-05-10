@@ -1,0 +1,63 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docobj
+*.userprefs
+
+# Rider / IntelliJ
+.idea/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/repositories.config
+.nuget/
+
+# Entity Framework migrations temp
+migrations_backup/
+
+# App secrets & local config
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.p12
+*.cer
+
+# Docker overrides
+docker-compose.override.yml
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish profiles
+PublishProfiles/
+*.pubxml
+*.pubxml.user
